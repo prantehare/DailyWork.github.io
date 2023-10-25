@@ -1,0 +1,105 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 10;
+    display: none;
+}
+
+.popup-content{
+    position: absolute;
+    width: 100%;
+    left: -5%;
+    line-height: 1.1;
+}
+
+.cnt223 a {
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.popup-onload {
+    position: absolute;
+    z-index: 101;
+    top: 30%;
+    left: 50%;
+    margin-top: -280px;
+    margin-left: -350px;
+}
+
+.cnt223 {
+    width: 60vw;
+    height: 100vh;
+    margin: 60px auto;
+    background: #f3f3f3;
+    position: relative;
+    right: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #000;
+}
+
+.cnt223 p {
+    clear: both;
+    line-height: 1;
+    color: #555555;
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.cnt223 p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.cnt223 .x {
+    float: right;
+    height: 40px;
+    left: 10px;
+    position: relative;
+    top: -25px;
+    width: 60px;    
+}
+
+.cnt223 .x:hover {
+    cursor: pointer;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+

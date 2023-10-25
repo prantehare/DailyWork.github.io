@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> daily Labour </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li><img src="./images/logo.png" alt=""></li>
+                <li><a href="#home" id="home">Home</a></li>
+                <li class="Daily "> <a href="">Daily Labour</a>
+                    <div class="sub-Daily">
+                        <ul>
+                            <li> <a href="">One Day</a> </li>
+                            <li><a href="">One Week</a> </li>
+                            <li> <a href="">One Month</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Facility" class="Facility">Facility</a>
+                </li>
+                <li><a href="#About">About</a></li>
+                <button type="button" class="btn btn-warning"><a href="login.html" target="_self">Login</a></button>
+            </ul>
+        </div>
+
+        <div class="page">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/9.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class='popup-onload'>
+        <div class='cnt223'>
+            <div class="popup-content">
+                <h2 align="center"><u> Login </u></h2>
+                <section class="vh-100">
+                    <div class="container-fluid h-custom">
+                        <div class="col d-flex justify-content-center align-items-center h-100">
+                            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                                <form>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-2">
+                                        <input type="number" id="form3Example3" required
+                                            class="form-control form-control-lg" placeholder="Enter adhar number"
+                                            style="padding-left: 2.5rem; padding-right: 2.5;" /> <br>
+                                        <label class="form-label" for="form3Example3">ADHAR NUMBER</label>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-2">
+                                        <input type="password" id="form3Example4" required
+                                            class="form-control form-control-lg" placeholder="Enter password"
+                                            style="padding-left: 2.5rem; padding-right: 2.5;" /> <br>
+                                        <label class="form-label" for="form3Example4">PASSWORD</label>
+                                    </div>
+
+                                    <div class="form-outline mb-2">
+                                        <input type="email" id="form3Example5" class="form-control form-control-lg"
+                                            placeholder="Enter Email Id"
+                                            style="padding-left: 2.5rem; padding-right: 2.5;" /> <br>
+                                        <label class="form-label" for="form3Example3 ">EMAIL</label>
+                                    </div>
+                                    <div class="text-lg-center text-lg-center">
+                                        <a href="home.html"> <button type="button" class="btn btn-primary" 
+                                                style="padding-left: 2.5rem; padding-right: 2.5rem; margin-left: 60px; text-decoration: none; height: 50px; ">Login</button></a>
+                                        <a href="">
+                                            <p class="small fw-bold  pt-2 ">Create New account? <a href=""
+                                                    class="link-danger">Sign Up</a></p>
+                                        </a>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>      
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src='https://code.jquery.com/jquery-1.8.2.js'></script>
+    <script>
+        $(function () {
+            var overlay = $('<div id="overlay"></div>');
+            overlay.show();
+            overlay.appendTo(document.body);
+            $('.popup-onload').show();
+            $('.close').click(function () {
+                $('.popup-onload').hide();
+                overlay.appendTo(document.body).remove();
+                return false;
+            });
+
+            $('.x').click(function () {
+                $('.popup').hide();
+                overlay.appendTo(document.body).remove();
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
